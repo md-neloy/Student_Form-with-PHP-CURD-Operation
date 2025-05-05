@@ -17,7 +17,7 @@ if (isset($_POST['add'])) {
 // Delete operation
 if (isset($_GET['delete'])) {
     $id = $_GET['delete'];
-    $delete_sql = "DELETE FROM students WHERE id=$id";
+    $delete_sql = "DELETE FROM students WHERE student_id=$id";
     $conn->query($delete_sql);
     header("Location: index.php");
 }
